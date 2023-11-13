@@ -1,0 +1,33 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-run": "^3.0.1",
+    "drizzle-kit": "^0.19.13",
+    "eslint": "^8.50.0",
+    "rollup": "^3.29.4",
+    "rollup-plugin-dotenv": "^0.5.0",
+    "source-map-support": "^0.5.21"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.28.6",
+    "fastify": "^4.23.2",
+    "fastify-plugin": "^4.5.1",
+    "pino-pretty": "^10.2.3",
+    "postgres": "^3.3.5"
+  }
+}
